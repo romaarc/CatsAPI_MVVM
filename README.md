@@ -1,1 +1,1 @@
-# CatsAPI_MVVM
+# Cats
