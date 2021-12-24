@@ -27,6 +27,20 @@
 		BBFB02BC2774EE8A00C8DA77 /* LoadingDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02BB2774EE8A00C8DA77 /* LoadingDataType.swift */; };
 		BBFB02BF2774EEE800C8DA77 /* BaseUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02BE2774EEE800C8DA77 /* BaseUICollectionViewCell.swift */; };
 		BBFB02C52774EF9D00C8DA77 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02C42774EF9D00C8DA77 /* CatViewController.swift */; };
+		BBFB02CA2774F6BD00C8DA77 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02C92774F6BD00C8DA77 /* API.swift */; };
+		BBFB02CC2774F76100C8DA77 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02CB2774F76100C8DA77 /* Breed.swift */; };
+		BBFB02CE2774F7AA00C8DA77 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02CD2774F7AA00C8DA77 /* NetworkService.swift */; };
+		BBFB02D02774F84D00C8DA77 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02CF2774F84D00C8DA77 /* Reachability.swift */; };
+		BBFB02D22774F88000C8DA77 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02D12774F88000C8DA77 /* UIDevice+Extension.swift */; };
+		BBFB02D42774F91B00C8DA77 /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02D32774F91B00C8DA77 /* URLFactory.swift */; };
+		BBFB02D82775166400C8DA77 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02D72775166400C8DA77 /* NetworkServiceProtocol.swift */; };
+		BBFB02DA2775170600C8DA77 /* NetworkService+Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02D92775170600C8DA77 /* NetworkService+Breeds.swift */; };
+		BBFB02DC2775183500C8DA77 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02DB2775183500C8DA77 /* CatViewModel.swift */; };
+		BBFB02DF27751C2F00C8DA77 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02DE27751C2F00C8DA77 /* Response.swift */; };
+		BBFB02E227752B6E00C8DA77 /* VerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02E127752B6E00C8DA77 /* VerticalFlowLayout.swift */; };
+		BBFB02E5277530B200C8DA77 /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02E4277530B200C8DA77 /* CatCell.swift */; };
+		BBFB02E82775356D00C8DA77 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02E72775356D00C8DA77 /* ImageCacher.swift */; };
+		BBFB02EA277535B600C8DA77 /* UIImageView+Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02E9277535B600C8DA77 /* UIImageView+Caching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +66,20 @@
 		BBFB02BB2774EE8A00C8DA77 /* LoadingDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataType.swift; sourceTree = "<group>"; };
 		BBFB02BE2774EEE800C8DA77 /* BaseUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewCell.swift; sourceTree = "<group>"; };
 		BBFB02C42774EF9D00C8DA77 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		BBFB02C92774F6BD00C8DA77 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BBFB02CB2774F76100C8DA77 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		BBFB02CD2774F7AA00C8DA77 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BBFB02CF2774F84D00C8DA77 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BBFB02D12774F88000C8DA77 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		BBFB02D32774F91B00C8DA77 /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		BBFB02D72775166400C8DA77 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		BBFB02D92775170600C8DA77 /* NetworkService+Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Breeds.swift"; sourceTree = "<group>"; };
+		BBFB02DB2775183500C8DA77 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
+		BBFB02DE27751C2F00C8DA77 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BBFB02E127752B6E00C8DA77 /* VerticalFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalFlowLayout.swift; sourceTree = "<group>"; };
+		BBFB02E4277530B200C8DA77 /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
+		BBFB02E72775356D00C8DA77 /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
+		BBFB02E9277535B600C8DA77 /* UIImageView+Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Caching.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +171,8 @@
 				BB135F6C2774E80800E81964 /* Font.swift */,
 				BB135F6E2774E82700E81964 /* UIColor+Extension.swift */,
 				BB135F702774E85700E81964 /* UILabel+Extension.swift */,
+				BBFB02D12774F88000C8DA77 /* UIDevice+Extension.swift */,
+				BBFB02E9277535B600C8DA77 /* UIImageView+Caching.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -160,6 +190,8 @@
 		BBFB02B22774ED7600C8DA77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BBFB02E027752B6000C8DA77 /* FlowLayout */,
+				BBFB02DD27751C1E00C8DA77 /* Typealias */,
 				BBFB02BA2774EE7D00C8DA77 /* Enums */,
 				BBFB02B62774EE1A00C8DA77 /* UI */,
 			);
@@ -169,6 +201,7 @@
 		BBFB02B32774ED9200C8DA77 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BBFB02CB2774F76100C8DA77 /* Breed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +218,8 @@
 		BBFB02B52774EDAF00C8DA77 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BBFB02E62775355800C8DA77 /* Cache */,
+				BBFB02C82774F6B000C8DA77 /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -225,7 +260,8 @@
 		BBFB02C02774EF2400C8DA77 /* Cat */ = {
 			isa = PBXGroup;
 			children = (
-				BBFB02C22774EF4900C8DA77 /* ViewModels */,
+				BBFB02E327752F4800C8DA77 /* Cell */,
+				BBFB02DB2775183500C8DA77 /* CatViewModel.swift */,
 				BBFB02C42774EF9D00C8DA77 /* CatViewController.swift */,
 			);
 			path = Cat;
@@ -234,23 +270,53 @@
 		BBFB02C12774EF2B00C8DA77 /* Cat Detail */ = {
 			isa = PBXGroup;
 			children = (
-				BBFB02C32774EF5700C8DA77 /* ViewModels */,
 			);
 			path = "Cat Detail";
 			sourceTree = "<group>";
 		};
-		BBFB02C22774EF4900C8DA77 /* ViewModels */ = {
+		BBFB02C82774F6B000C8DA77 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BBFB02C92774F6BD00C8DA77 /* API.swift */,
+				BBFB02CD2774F7AA00C8DA77 /* NetworkService.swift */,
+				BBFB02D92775170600C8DA77 /* NetworkService+Breeds.swift */,
+				BBFB02D72775166400C8DA77 /* NetworkServiceProtocol.swift */,
+				BBFB02CF2774F84D00C8DA77 /* Reachability.swift */,
+				BBFB02D32774F91B00C8DA77 /* URLFactory.swift */,
 			);
-			path = ViewModels;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		BBFB02C32774EF5700C8DA77 /* ViewModels */ = {
+		BBFB02DD27751C1E00C8DA77 /* Typealias */ = {
 			isa = PBXGroup;
 			children = (
+				BBFB02DE27751C2F00C8DA77 /* Response.swift */,
 			);
-			path = ViewModels;
+			path = Typealias;
+			sourceTree = "<group>";
+		};
+		BBFB02E027752B6000C8DA77 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				BBFB02E127752B6E00C8DA77 /* VerticalFlowLayout.swift */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		BBFB02E327752F4800C8DA77 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BBFB02E4277530B200C8DA77 /* CatCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BBFB02E62775355800C8DA77 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				BBFB02E72775356D00C8DA77 /* ImageCacher.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,20 +393,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB135F622774E69400E81964 /* AppCoordinator.swift in Sources */,
+				BBFB02DA2775170600C8DA77 /* NetworkService+Breeds.swift in Sources */,
+				BBFB02EA277535B600C8DA77 /* UIImageView+Caching.swift in Sources */,
 				BB135F6B2774E7EF00E81964 /* ReuseIdentifier.swift in Sources */,
+				BBFB02D02774F84D00C8DA77 /* Reachability.swift in Sources */,
 				BBFB02AF2774EC7600C8DA77 /* GlobalConstants.swift in Sources */,
 				BB135F6D2774E80800E81964 /* Font.swift in Sources */,
+				BBFB02CE2774F7AA00C8DA77 /* NetworkService.swift in Sources */,
 				BB135F682774E7B300E81964 /* Colors.swift in Sources */,
 				BBFB02B92774EE4000C8DA77 /* BaseViewController.swift in Sources */,
 				BB135F4C2774E44300E81964 /* AppDelegate.swift in Sources */,
 				BB135F642774E71100E81964 /* AppDependency.swift in Sources */,
 				BBFB02C52774EF9D00C8DA77 /* CatViewController.swift in Sources */,
+				BBFB02D42774F91B00C8DA77 /* URLFactory.swift in Sources */,
 				BB135F4E2774E44300E81964 /* SceneDelegate.swift in Sources */,
 				BBFB02BC2774EE8A00C8DA77 /* LoadingDataType.swift in Sources */,
+				BBFB02E5277530B200C8DA77 /* CatCell.swift in Sources */,
+				BBFB02D22774F88000C8DA77 /* UIDevice+Extension.swift in Sources */,
 				BB135F6F2774E82700E81964 /* UIColor+Extension.swift in Sources */,
+				BBFB02DC2775183500C8DA77 /* CatViewModel.swift in Sources */,
 				BB135F712774E85700E81964 /* UILabel+Extension.swift in Sources */,
+				BBFB02E227752B6E00C8DA77 /* VerticalFlowLayout.swift in Sources */,
 				BBFB02B12774ECA000C8DA77 /* Localize.swift in Sources */,
+				BBFB02CA2774F6BD00C8DA77 /* API.swift in Sources */,
+				BBFB02CC2774F76100C8DA77 /* Breed.swift in Sources */,
+				BBFB02D82775166400C8DA77 /* NetworkServiceProtocol.swift in Sources */,
+				BBFB02E82775356D00C8DA77 /* ImageCacher.swift in Sources */,
 				BBFB02BF2774EEE800C8DA77 /* BaseUICollectionViewCell.swift in Sources */,
+				BBFB02DF27751C2F00C8DA77 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +493,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_SWIFT_FLAGS[sdk=iphonesimulator*]" = "-D IOS_SIMULATOR";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

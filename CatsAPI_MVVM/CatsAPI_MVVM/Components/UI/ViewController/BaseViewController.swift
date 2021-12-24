@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
     }()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        let layout = UICollectionViewFlowLayout()
+        let layout = VerticalFlowLayout()
         self.collectionView = UICollectionView.init(frame: .zero, collectionViewLayout: layout)
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }

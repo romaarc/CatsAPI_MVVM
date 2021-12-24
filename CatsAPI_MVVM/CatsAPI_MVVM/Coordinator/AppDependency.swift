@@ -8,45 +8,43 @@
 import Foundation
 
 protocol HasDependencies {
-    //var rickAndMortyNetworkService: NetworkServiceProtocol { get }
-    //var reachabilityService: ReachabilityProtocol { get }
-    //var persistentProvider: PersistentProviderProtocol { get }
+    var catsNetworkService: NetworkServiceProtocol { get }
+    var reachabilityService: ReachabilityProtocol { get }
+    var catsViewModel: CatViewModelProtocol { get }
 }
 
 class AppDependency {
-//    let networkService: NetworkService
-//    let reachability: Reachability
-//    let persistent: PersistentProvider
-//
-//    init(networkService: NetworkService,
-//         reachability: Reachability,
-//         persistent: PersistentProvider) {
-//        self.networkService = networkService
-//        self.reachability = reachability
-//        self.persistent = persistent
-//    }
+    private let networkService: NetworkService
+    private let reachability: Reachability
+    private let catViewModel: CatViewModel
+
+    init(networkService: NetworkService,
+         reachability: Reachability,
+         catViewModel: CatViewModel) {
+        self.networkService = networkService
+        self.reachability = reachability
+        self.catViewModel = catViewModel
+    }
 
     static func makeDefault() -> AppDependency {
-//        let reachability = Reachability()
-//        let networkService = NetworkService(customDecoder: JSONDecoderCustom(),
-//                                            reachability: reachability)
-//        let persistent = PersistentProvider()
-//        return AppDependency(networkService: networkService,
-//                             reachability: reachability,
-//                             persistent: persistent)
-        AppDependency()
+        let reachability = Reachability()
+        let networkService = NetworkService(reachability: reachability)
+        let catViewModel = CatViewModel(catsNetworkService: networkService)
+        return AppDependency(networkService: networkService,
+                             reachability: reachability,
+                             catViewModel: catViewModel)
     }
 }
 
 extension AppDependency: HasDependencies {
-//    var persistentProvider: PersistentProviderProtocol {
-//        return self.persistent
-//    }
-//
-//    var rickAndMortyNetworkService: NetworkServiceProtocol {
-//        return self.networkService
-//    }
-//    var reachabilityService: ReachabilityProtocol {
-//        return self.reachability
-//    }
+    var catsViewModel: CatViewModelProtocol {
+        self.catViewModel
+    }
+
+    var catsNetworkService: NetworkServiceProtocol {
+        return self.networkService
+    }
+    var reachabilityService: ReachabilityProtocol {
+        return self.reachability
+    }
 }

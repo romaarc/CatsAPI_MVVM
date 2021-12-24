@@ -62,7 +62,7 @@ private extension AppCoordinator {
         guard let navController = self.navigationControllers[.cats] else {
             fatalError("something wrong with appCoordinator")
         }
-        let CatVC = CatViewController()
+        let CatVC = CatViewController(viewModel: appDependency.catsViewModel)
         CatVC.navigationItem.title = Localize.cats
         navController.setViewControllers([CatVC], animated: false)
         setupAppearanceNavigationBar(with: navController)
