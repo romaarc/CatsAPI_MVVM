@@ -21,6 +21,8 @@ class CatCell: BaseUICollectionViewCell {
         let view = UIView()
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.borderColor = Colors.borderLightGray.cgColor
+        view.layer.borderWidth = 1
         return view
     }()
     
@@ -49,7 +51,7 @@ class CatCell: BaseUICollectionViewCell {
         
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 0.90
-
+        
         label.attributedText = NSMutableAttributedString(string: "", attributes: [.kern: -0.41, NSAttributedString.Key.paragraphStyle: paragraphStyle])
         label.numberOfLines = 0
         return label
@@ -62,7 +64,7 @@ class CatCell: BaseUICollectionViewCell {
         cornerRadius = CatConstants.Layout.cornerRadius
     }
 }
-    //MARK: - UI
+//MARK: - UI
 extension CatCell {
     private func setupUI() {
         NSLayoutConstraint.activate([
@@ -75,7 +77,7 @@ extension CatCell {
             detailView.leadingAnchor.constraint(equalTo: leadingAnchor),
             detailView.trailingAnchor.constraint(equalTo: trailingAnchor),
             detailView.bottomAnchor.constraint(equalTo: bottomAnchor),
-        
+            
             detailViewStatusLabel.leadingAnchor.constraint(equalTo: detailView.leadingAnchor, constant: 12),
             detailViewStatusLabel.topAnchor.constraint(equalTo: detailView.topAnchor, constant: 12),
             detailViewStatusLabel.heightAnchor.constraint(equalToConstant: 13),
@@ -85,7 +87,7 @@ extension CatCell {
             detailViewNameLabel.leadingAnchor.constraint(equalTo: detailView.leadingAnchor, constant: 12),
             detailViewNameLabel.trailingAnchor.constraint(equalTo: detailView.trailingAnchor, constant: -12),
             detailViewNameLabel.heightAnchor.constraint(equalToConstant: 42)
-                        
+            
         ])
     }
     //MARK: - Update with ViewModel
@@ -93,14 +95,20 @@ extension CatCell {
         let cat = viewModel.cat(at: indexPath.row)
         detailViewNameLabel.text = cat.name
         detailViewStatusLabel.text = cat.origin
-        if let image = cat.image {
+        
+        ///Nothing images in API
+        if cat.id == "pers" {
+            catImageView.image = UIImage(named: "Pers")!
+        } else if cat.id == "mala" {
+            catImageView.image = UIImage(named: "Malayan")!
+        } else if cat.id == "ebur" {
+            catImageView.image = UIImage(named: "EuropeanBurmese")!
+        }
+        
+        if let image = cat.image, let catID = cat.name {
+            print(catID)
             if let urlString = image.url {
-                let url = URL(string: urlString)!
-                if let cachedImage = ImageCacher.shared.get(for: url) {
-                    catImageView.image = cachedImage
-                } else {
-                    catImageView.downloaded(from: url)
-                }
+                catImageView.setImage(with: URL(string: urlString), catID: catID)
             }
         }
     }

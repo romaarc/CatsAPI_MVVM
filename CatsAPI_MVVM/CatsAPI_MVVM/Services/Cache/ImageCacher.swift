@@ -12,7 +12,7 @@ class ImageCacher {
         
     private lazy var imageCache: NSCache<AnyObject, AnyObject> = {
         let cache = NSCache<AnyObject, AnyObject>()
-        cache.countLimit = 400
+        cache.countLimit = 200
         return cache
     }()
     

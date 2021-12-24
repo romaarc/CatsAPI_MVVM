@@ -35,9 +35,9 @@ class AppCoordinator {
         let navigationControllers = NavigationControllersType.allCases.compactMap {
             self.navigationControllers[$0]
         }
-        tabBarController.setViewControllers(navigationControllers, animated: true)
-        setupAppearanceTabBar(with: tabBarController)
-        window.rootViewController = tabBarController
+        //tabBarController.setViewControllers(navigationControllers, animated: true)
+        //setupAppearanceTabBar(with: tabBarController)
+        window.rootViewController = navigationControllers[0]
         window.makeKeyAndVisible()
     }
 }
