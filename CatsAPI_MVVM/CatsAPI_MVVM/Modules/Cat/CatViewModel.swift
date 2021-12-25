@@ -13,6 +13,7 @@ protocol CatViewModelProtocol {
     
     func cat(at index: Int) -> Breed
     func fetchBreeds()
+    func viewModelForSelectedRow(at indexPath: IndexPath) -> CatDetailViewModelProtocol
 }
 
 class CatViewModel {
@@ -54,5 +55,9 @@ extension CatViewModel: CatViewModelProtocol {
                 print(error)
             }
         }
+    }
+    
+    func viewModelForSelectedRow(at indexPath: IndexPath) -> CatDetailViewModelProtocol {
+        CatDetailViewModel(cat: cat(at: indexPath.row))
     }
 }

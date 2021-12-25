@@ -95,7 +95,6 @@ extension CatCell {
         let cat = viewModel.cat(at: indexPath.row)
         detailViewNameLabel.text = cat.name
         detailViewStatusLabel.text = cat.origin
-        
         ///Nothing images in API
         if cat.id == "pers" {
             catImageView.image = UIImage(named: "Pers")!
@@ -106,7 +105,6 @@ extension CatCell {
         }
         
         if let image = cat.image, let catID = cat.name {
-            print(catID)
             if let urlString = image.url {
                 catImageView.setImage(with: URL(string: urlString), catID: catID)
             }

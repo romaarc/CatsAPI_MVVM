@@ -35,7 +35,7 @@ class CatViewController: BaseViewController {
     }
     
     override func setupCollectionView() {
-        //collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.showsVerticalScrollIndicator = false
         collectionView.backgroundColor = .white
@@ -67,5 +67,14 @@ extension CatViewController: UICollectionViewDataSource {
         }
         cell.update(with: viewModel, and: indexPath)
         return cell
+    }
+}
+
+extension CatViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewModel = viewModel.viewModelForSelectedRow(at: indexPath)
+        let catDetailVC = CatDetailViewController(viewModel: detailViewModel)
+        catDetailVC.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(catDetailVC, animated: true)
     }
 }

@@ -13,10 +13,11 @@ struct Breed: Decodable {
     let origin: String?
     let childFriendly: Int?
     let description: String?
+    let temperament: String?
     let image: Image?
     
     private enum CodingKeys: String, CodingKey {
-        case id, name, origin, description, image
+        case id, name, origin, description, temperament, image
         case childFriendly = "child_friendly"
     }
 }

@@ -18,6 +18,10 @@
 		BB135F6D2774E80800E81964 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB135F6C2774E80800E81964 /* Font.swift */; };
 		BB135F6F2774E82700E81964 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB135F6E2774E82700E81964 /* UIColor+Extension.swift */; };
 		BB135F712774E85700E81964 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB135F702774E85700E81964 /* UILabel+Extension.swift */; };
+		BB5DEA982777907C0027482F /* CatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA972777907C0027482F /* CatDetailViewController.swift */; };
+		BB5DEA9A277790BC0027482F /* CatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA99277790BC0027482F /* CatDetailViewModel.swift */; };
+		BB5DEA9D27779F6C0027482F /* CatDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA9C27779F6C0027482F /* CatDetailHeaderView.swift */; };
+		BB5DEAA027779FD00027482F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA9F27779FD00027482F /* BaseView.swift */; };
 		BBD37C59277621DF008B617A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BBD37C58277621DF008B617A /* Kingfisher */; };
 		BBFB02AB2774E9F600C8DA77 /* SBSansUI-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBFB02AA2774E9F000C8DA77 /* SBSansUI-Regular.ttf */; };
 		BBFB02AC2774E9F800C8DA77 /* SBSansDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBFB02A82774E9E900C8DA77 /* SBSansDisplay-SemiBold.ttf */; };
@@ -58,6 +62,10 @@
 		BB135F6C2774E80800E81964 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		BB135F6E2774E82700E81964 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BB135F702774E85700E81964 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		BB5DEA972777907C0027482F /* CatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailViewController.swift; sourceTree = "<group>"; };
+		BB5DEA99277790BC0027482F /* CatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailViewModel.swift; sourceTree = "<group>"; };
+		BB5DEA9C27779F6C0027482F /* CatDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailHeaderView.swift; sourceTree = "<group>"; };
+		BB5DEA9F27779FD00027482F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BBFB02A82774E9E900C8DA77 /* SBSansDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBSansDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		BBFB02A92774E9E900C8DA77 /* SBSansUI-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBSansUI-Light.ttf"; sourceTree = "<group>"; };
 		BBFB02AA2774E9F000C8DA77 /* SBSansUI-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBSansUI-Regular.ttf"; sourceTree = "<group>"; };
@@ -189,6 +197,22 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		BB5DEA9B27779DFE0027482F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DEA9C27779F6C0027482F /* CatDetailHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB5DEA9E27779FC70027482F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DEA9F27779FD00027482F /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BBFB02B22774ED7600C8DA77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +253,7 @@
 		BBFB02B62774EE1A00C8DA77 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BB5DEA9E27779FC70027482F /* View */,
 				BBFB02BD2774EEDE00C8DA77 /* Cell */,
 				BBFB02B72774EE2700C8DA77 /* ViewController */,
 			);
@@ -272,6 +297,9 @@
 		BBFB02C12774EF2B00C8DA77 /* Cat Detail */ = {
 			isa = PBXGroup;
 			children = (
+				BB5DEA9B27779DFE0027482F /* View */,
+				BB5DEA99277790BC0027482F /* CatDetailViewModel.swift */,
+				BB5DEA972777907C0027482F /* CatDetailViewController.swift */,
 			);
 			path = "Cat Detail";
 			sourceTree = "<group>";
@@ -401,12 +429,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB135F622774E69400E81964 /* AppCoordinator.swift in Sources */,
+				BB5DEA9A277790BC0027482F /* CatDetailViewModel.swift in Sources */,
 				BBFB02DA2775170600C8DA77 /* NetworkService+Breeds.swift in Sources */,
+				BB5DEA982777907C0027482F /* CatDetailViewController.swift in Sources */,
 				BBFB02EA277535B600C8DA77 /* UIImageView+Caching.swift in Sources */,
 				BB135F6B2774E7EF00E81964 /* ReuseIdentifier.swift in Sources */,
 				BBFB02D02774F84D00C8DA77 /* Reachability.swift in Sources */,
 				BBFB02AF2774EC7600C8DA77 /* GlobalConstants.swift in Sources */,
 				BB135F6D2774E80800E81964 /* Font.swift in Sources */,
+				BB5DEAA027779FD00027482F /* BaseView.swift in Sources */,
 				BBFB02CE2774F7AA00C8DA77 /* NetworkService.swift in Sources */,
 				BB135F682774E7B300E81964 /* Colors.swift in Sources */,
 				BBFB02B92774EE4000C8DA77 /* BaseViewController.swift in Sources */,
@@ -418,6 +449,7 @@
 				BBFB02BC2774EE8A00C8DA77 /* LoadingDataType.swift in Sources */,
 				BBFB02E5277530B200C8DA77 /* CatCell.swift in Sources */,
 				BBFB02D22774F88000C8DA77 /* UIDevice+Extension.swift in Sources */,
+				BB5DEA9D27779F6C0027482F /* CatDetailHeaderView.swift in Sources */,
 				BB135F6F2774E82700E81964 /* UIColor+Extension.swift in Sources */,
 				BBFB02DC2775183500C8DA77 /* CatViewModel.swift in Sources */,
 				BB135F712774E85700E81964 /* UILabel+Extension.swift in Sources */,
