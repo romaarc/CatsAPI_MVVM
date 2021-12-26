@@ -39,7 +39,7 @@ struct CatConstants {
     }
     
     struct Strings {
-        static let emptyMessageDidError = "Не найдено питомцев или подключитесь к сети, чтобы загрузить данные"
-        static let emptyMessage = "Не найдено питомцев"
+        static let emptyMessageDidError = "Не найдено кошек или подключитесь к сети, чтобы загрузить данные"
+        static let emptyMessage = "Не найдено кошек"
     }
 }

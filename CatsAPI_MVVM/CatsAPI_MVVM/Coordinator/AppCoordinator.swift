@@ -21,9 +21,6 @@ class AppCoordinator {
     }
     
     func start() {
-        //Kingfisher method for clear cache images
-        //UIImageView().setupCache()
-        
         if #available(iOS 13.0, *) {
             window.overrideUserInterfaceStyle = .light
         }

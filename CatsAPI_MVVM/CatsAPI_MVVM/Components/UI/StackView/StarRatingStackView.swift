@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StarRatingStackView: UIStackView {
+final class StarRatingStackView: UIStackView {
     
     private var rating: Int = 5
     var starFilled: Int?

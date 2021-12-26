@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class CatDetailHeaderView: BaseView {
-
+    
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +37,7 @@ class CatDetailHeaderView: BaseView {
         label.font = Font.sber(ofSize: Font.Size.twentyEight, weight: .regular)
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 0
-
+        
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 1.02
         
@@ -54,7 +54,7 @@ class CatDetailHeaderView: BaseView {
         label.font = Font.sber(ofSize: Font.Size.twenty, weight: .light)
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 0
-
+        
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 1.02
         
@@ -271,7 +271,7 @@ class CatDetailHeaderView: BaseView {
         [avatarImageView, temperamentLabel, mainStackView].forEach { backgroundImageView.addSubview($0)}
         
         [backgroundImageView, descriptionLabel].forEach { addSubview($0) }
-
+        
         [childFriendlyLabel, childFriendlyFiveStarStackView].forEach { childFriendlyStackView.addArrangedSubview($0) }
         
         dogFriendlyStackView.addArrangedSubview(dogFriendlyLabel, withMargin: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -58))
@@ -301,7 +301,7 @@ class CatDetailHeaderView: BaseView {
         
         vocalisationStackView.addArrangedSubview(vocalisationLabel, withMargin: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -59))
         vocalisationStackView.addArrangedSubview(vocalisationFiveStarStackView)
-
+        
         [adaptabilityStackView, affectionLevelStackView].forEach { mainFirstStackView.addArrangedSubview($0) }
         [childFriendlyStackView, dogFriendlyStackView].forEach { mainSecondStackView.addArrangedSubview($0) }
         [energyLevelStackView, healthIssuesStackView].forEach { mainThirdStackView.addArrangedSubview($0) }
@@ -311,7 +311,7 @@ class CatDetailHeaderView: BaseView {
         
         [mainFirstStackView, mainSecondStackView, mainThirdStackView, mainFourStackView, mainFifthStackView, mainSixStackView].forEach { mainStackView.addArrangedSubview($0) }
     }
-
+    
     override func setupLayout() {
         NSLayoutConstraint.activate([
             backgroundImageView.topAnchor.constraint(equalTo: topAnchor),
@@ -380,7 +380,7 @@ class CatDetailHeaderView: BaseView {
         sheddingLevelFiveStarStackView.starFilled = cat.sheddingLevel
         sheddingLevelFiveStarStackView.draw()
         sheddingLevelLabel.text = "Shedding level"
-
+        
         socialNeedsFiveStarStackView.starFilled = cat.socialNeeds
         socialNeedsFiveStarStackView.draw()
         socialNeedsLabel.text = "Social needs"

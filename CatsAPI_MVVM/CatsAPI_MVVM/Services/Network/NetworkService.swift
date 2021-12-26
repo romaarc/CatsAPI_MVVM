@@ -28,14 +28,12 @@ final class NetworkService {
             return
         }
         
-        guard let url = request.url else {
+        guard let _ = request.url else {
             completion(.failure(NetworkErrors.wrongURL))
             return
         }
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-            print(url)
-            
             if let error = error {
                 completion(.failure(error))
                 return
