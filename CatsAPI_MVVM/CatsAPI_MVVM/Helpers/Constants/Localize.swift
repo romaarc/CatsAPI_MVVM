@@ -10,7 +10,5 @@ import UIKit
 enum Localize {
     static let cats = "Кошки"
     
-    enum Images {
-        static let catsIcon = UIImage(named: "paw")!
-    }
+    enum Images {}
 }

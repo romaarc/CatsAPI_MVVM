@@ -56,4 +56,3 @@ final class Reachability: ReachabilityProtocol {
         }
     }
 }
-

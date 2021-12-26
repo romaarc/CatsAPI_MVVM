@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-cat-footprint-50.png",
+      "filename" : "starnotfilled.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "starnotfilled-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "starnotfilled-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

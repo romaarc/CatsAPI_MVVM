@@ -87,7 +87,6 @@ extension CatCell {
             detailViewNameLabel.leadingAnchor.constraint(equalTo: detailView.leadingAnchor, constant: 12),
             detailViewNameLabel.trailingAnchor.constraint(equalTo: detailView.trailingAnchor, constant: -12),
             detailViewNameLabel.heightAnchor.constraint(equalToConstant: 42)
-            
         ])
     }
     //MARK: - Update with ViewModel

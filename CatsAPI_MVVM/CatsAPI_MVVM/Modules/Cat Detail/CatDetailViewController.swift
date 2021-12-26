@@ -73,7 +73,7 @@ private extension CatDetailViewController {
             catDetailHeaderView.topAnchor.constraint(equalTo: contentView.topAnchor),
             catDetailHeaderView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             catDetailHeaderView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            catDetailHeaderView.heightAnchor.constraint(equalTo: view.heightAnchor)
+            catDetailHeaderView.heightAnchor.constraint(equalTo: contentView.heightAnchor)
         ])
         catDetailHeaderView.update(viewModel: self.viewModel)
     }

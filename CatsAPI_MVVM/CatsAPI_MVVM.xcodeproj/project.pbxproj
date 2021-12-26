@@ -22,6 +22,11 @@
 		BB5DEA9A277790BC0027482F /* CatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA99277790BC0027482F /* CatDetailViewModel.swift */; };
 		BB5DEA9D27779F6C0027482F /* CatDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA9C27779F6C0027482F /* CatDetailHeaderView.swift */; };
 		BB5DEAA027779FD00027482F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEA9F27779FD00027482F /* BaseView.swift */; };
+		BB5DEAA22777C1130027482F /* StarRatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEAA12777C1130027482F /* StarRatingStackView.swift */; };
+		BB5DEAA52777D48B0027482F /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEAA42777D48B0027482F /* StarButton.swift */; };
+		BB5DEAA82777E2050027482F /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEAA72777E2050027482F /* Label.swift */; };
+		BB5DEAAB2777E65A0027482F /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEAAA2777E65A0027482F /* StackView.swift */; };
+		BB5DEAAD277803590027482F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DEAAC277803590027482F /* UIStackView+Extension.swift */; };
 		BBD37C59277621DF008B617A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BBD37C58277621DF008B617A /* Kingfisher */; };
 		BBFB02AB2774E9F600C8DA77 /* SBSansUI-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBFB02AA2774E9F000C8DA77 /* SBSansUI-Regular.ttf */; };
 		BBFB02AC2774E9F800C8DA77 /* SBSansDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBFB02A82774E9E900C8DA77 /* SBSansDisplay-SemiBold.ttf */; };
@@ -29,7 +34,6 @@
 		BBFB02AF2774EC7600C8DA77 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02AE2774EC7600C8DA77 /* GlobalConstants.swift */; };
 		BBFB02B12774ECA000C8DA77 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02B02774ECA000C8DA77 /* Localize.swift */; };
 		BBFB02B92774EE4000C8DA77 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02B82774EE4000C8DA77 /* BaseViewController.swift */; };
-		BBFB02BC2774EE8A00C8DA77 /* LoadingDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02BB2774EE8A00C8DA77 /* LoadingDataType.swift */; };
 		BBFB02BF2774EEE800C8DA77 /* BaseUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02BE2774EEE800C8DA77 /* BaseUICollectionViewCell.swift */; };
 		BBFB02C52774EF9D00C8DA77 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02C42774EF9D00C8DA77 /* CatViewController.swift */; };
 		BBFB02CA2774F6BD00C8DA77 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB02C92774F6BD00C8DA77 /* API.swift */; };
@@ -66,13 +70,17 @@
 		BB5DEA99277790BC0027482F /* CatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailViewModel.swift; sourceTree = "<group>"; };
 		BB5DEA9C27779F6C0027482F /* CatDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailHeaderView.swift; sourceTree = "<group>"; };
 		BB5DEA9F27779FD00027482F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BB5DEAA12777C1130027482F /* StarRatingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingStackView.swift; sourceTree = "<group>"; };
+		BB5DEAA42777D48B0027482F /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		BB5DEAA72777E2050027482F /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		BB5DEAAA2777E65A0027482F /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		BB5DEAAC277803590027482F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		BBFB02A82774E9E900C8DA77 /* SBSansDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBSansDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		BBFB02A92774E9E900C8DA77 /* SBSansUI-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBSansUI-Light.ttf"; sourceTree = "<group>"; };
 		BBFB02AA2774E9F000C8DA77 /* SBSansUI-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBSansUI-Regular.ttf"; sourceTree = "<group>"; };
 		BBFB02AE2774EC7600C8DA77 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		BBFB02B02774ECA000C8DA77 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		BBFB02B82774EE4000C8DA77 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		BBFB02BB2774EE8A00C8DA77 /* LoadingDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataType.swift; sourceTree = "<group>"; };
 		BBFB02BE2774EEE800C8DA77 /* BaseUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewCell.swift; sourceTree = "<group>"; };
 		BBFB02C42774EF9D00C8DA77 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
 		BBFB02C92774F6BD00C8DA77 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 				BB135F702774E85700E81964 /* UILabel+Extension.swift */,
 				BBFB02D12774F88000C8DA77 /* UIDevice+Extension.swift */,
 				BBFB02E9277535B600C8DA77 /* UIImageView+Caching.swift */,
+				BB5DEAAC277803590027482F /* UIStackView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -213,12 +222,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BB5DEAA32777D4780027482F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DEAA42777D48B0027482F /* StarButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		BB5DEAA62777E1F30027482F /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DEAA72777E2050027482F /* Label.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		BB5DEAA92777E64C0027482F /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DEAA12777C1130027482F /* StarRatingStackView.swift */,
+				BB5DEAAA2777E65A0027482F /* StackView.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		BBFB02B22774ED7600C8DA77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				BBFB02E027752B6000C8DA77 /* FlowLayout */,
 				BBFB02DD27751C1E00C8DA77 /* Typealias */,
-				BBFB02BA2774EE7D00C8DA77 /* Enums */,
 				BBFB02B62774EE1A00C8DA77 /* UI */,
 			);
 			path = Components;
@@ -253,6 +286,9 @@
 		BBFB02B62774EE1A00C8DA77 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BB5DEAA92777E64C0027482F /* StackView */,
+				BB5DEAA62777E1F30027482F /* Label */,
+				BB5DEAA32777D4780027482F /* Button */,
 				BB5DEA9E27779FC70027482F /* View */,
 				BBFB02BD2774EEDE00C8DA77 /* Cell */,
 				BBFB02B72774EE2700C8DA77 /* ViewController */,
@@ -266,14 +302,6 @@
 				BBFB02B82774EE4000C8DA77 /* BaseViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		BBFB02BA2774EE7D00C8DA77 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				BBFB02BB2774EE8A00C8DA77 /* LoadingDataType.swift */,
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		BBFB02BD2774EEDE00C8DA77 /* Cell */ = {
@@ -441,14 +469,18 @@
 				BBFB02CE2774F7AA00C8DA77 /* NetworkService.swift in Sources */,
 				BB135F682774E7B300E81964 /* Colors.swift in Sources */,
 				BBFB02B92774EE4000C8DA77 /* BaseViewController.swift in Sources */,
+				BB5DEAAB2777E65A0027482F /* StackView.swift in Sources */,
+				BB5DEAA22777C1130027482F /* StarRatingStackView.swift in Sources */,
+				BB5DEAA82777E2050027482F /* Label.swift in Sources */,
 				BB135F4C2774E44300E81964 /* AppDelegate.swift in Sources */,
 				BB135F642774E71100E81964 /* AppDependency.swift in Sources */,
 				BBFB02C52774EF9D00C8DA77 /* CatViewController.swift in Sources */,
 				BBFB02D42774F91B00C8DA77 /* URLFactory.swift in Sources */,
 				BB135F4E2774E44300E81964 /* SceneDelegate.swift in Sources */,
-				BBFB02BC2774EE8A00C8DA77 /* LoadingDataType.swift in Sources */,
+				BB5DEAA52777D48B0027482F /* StarButton.swift in Sources */,
 				BBFB02E5277530B200C8DA77 /* CatCell.swift in Sources */,
 				BBFB02D22774F88000C8DA77 /* UIDevice+Extension.swift in Sources */,
+				BB5DEAAD277803590027482F /* UIStackView+Extension.swift in Sources */,
 				BB5DEA9D27779F6C0027482F /* CatDetailHeaderView.swift in Sources */,
 				BB135F6F2774E82700E81964 /* UIColor+Extension.swift in Sources */,
 				BBFB02DC2775183500C8DA77 /* CatViewModel.swift in Sources */,

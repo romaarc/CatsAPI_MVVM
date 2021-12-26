@@ -19,7 +19,9 @@ protocol CatViewModelProtocol {
 class CatViewModel {
     private var cats: [Breed] = []
     private let catsNetworkService: NetworkServiceProtocol
-    private var params = BreedsURLParameters(attach_breed: "", page: GlobalConstants.initialPage, limit: GlobalConstants.limit)
+    private var params = BreedsURLParameters(attach_breed: "",
+                                             page: GlobalConstants.initialPage,
+                                             limit: GlobalConstants.limit)
     private var isLoading = false
     
     var reload: (() -> ())?

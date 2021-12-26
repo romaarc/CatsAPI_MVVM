@@ -34,6 +34,8 @@ struct CatConstants {
     
     struct Design {
         static var shadowColor = UIColor.black
+        static var starFilled =  UIImage(named: "starfilled")?.withRenderingMode(.alwaysOriginal)
+        static var starNotFilled =  UIImage(named: "starnotfilled")?.withRenderingMode(.alwaysOriginal)
     }
     
     struct Strings {

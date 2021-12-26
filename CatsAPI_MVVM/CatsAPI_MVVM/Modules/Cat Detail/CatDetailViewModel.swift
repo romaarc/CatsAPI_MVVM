@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CatDetailViewModelProtocol {
-    var cat: Breed {get set}
+    var cat: Breed { get set }
 }
 
 class CatDetailViewModel: CatDetailViewModelProtocol {

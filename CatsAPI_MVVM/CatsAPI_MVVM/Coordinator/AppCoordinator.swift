@@ -29,14 +29,10 @@ class AppCoordinator {
         }
         
         setupCats()
-        //setupLocation()
-        //setupEpisode()
         
         let navigationControllers = NavigationControllersType.allCases.compactMap {
             self.navigationControllers[$0]
         }
-        //tabBarController.setViewControllers(navigationControllers, animated: true)
-        //setupAppearanceTabBar(with: tabBarController)
         window.rootViewController = navigationControllers[0]
         window.makeKeyAndVisible()
     }
@@ -47,10 +43,6 @@ private extension AppCoordinator {
         var result: [NavigationControllersType: UINavigationController] = [:]
         NavigationControllersType.allCases.forEach { navigationControllerKey in
             let navigationController = UINavigationController()
-            let tabBarItem: UITabBarItem = UITabBarItem(title: navigationControllerKey.title,
-                                                        image: navigationControllerKey.image,
-                                                        tag: navigationControllerKey.rawValue)
-            navigationController.tabBarItem = tabBarItem
             navigationController.navigationBar.prefersLargeTitles = true
             navigationController.navigationBar.sizeToFit()
             result[navigationControllerKey] = navigationController
@@ -126,13 +118,6 @@ fileprivate enum NavigationControllersType: Int, CaseIterable {
         switch self {
         case .cats:
             return Localize.cats
-        }
-    }
-    
-    var image: UIImage {
-        switch self {
-        case .cats:
-            return Localize.Images.catsIcon
         }
     }
 }
