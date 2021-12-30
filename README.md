@@ -5,12 +5,14 @@
 ## Установка
 У вас должны быть установлены SPM <a href="https://github.com/onevcat/Kingfisher">Kingfisher</a>
 
-## Детали реализации
-### Deployment Target
+# Детали реализации
+## Deployment Target
 
 iOS 13
-### Архитектура приложения
+## Архитектура приложения
 
 **UIKit without Storyboard and Xibs, only layout with code**<br>
 
+# UI
 **Simple MVVM + Coordinator + Services(URLSession)**<br>
+
