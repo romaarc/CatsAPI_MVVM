@@ -10,9 +10,8 @@
 
 iOS 13
 ## Архитектура приложения
-
-**UIKit without Storyboard and Xibs, only layout with code**<br>
+**Simple MVVM + Coordinator + Services(URLSession)**<br>
 
 # UI
-**Simple MVVM + Coordinator + Services(URLSession)**<br>
+**UIKit without Storyboard and Xibs, only layout with code**<br>
 
