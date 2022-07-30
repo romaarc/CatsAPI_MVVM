@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ImageCacher {
+final class ImageCacher {
     static let shared = ImageCacher()
         
     private lazy var imageCache: NSCache<AnyObject, AnyObject> = {

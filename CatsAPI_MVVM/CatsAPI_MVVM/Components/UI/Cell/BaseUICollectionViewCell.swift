@@ -8,7 +8,6 @@
 import UIKit
 
 class BaseUICollectionViewCell: UICollectionViewCell {
-    
     var shadowColor: UIColor = .black
     var cornerRadius: CGFloat = 0
     var shadowRadius: CGFloat = 0

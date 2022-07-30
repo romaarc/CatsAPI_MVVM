@@ -11,7 +11,7 @@ protocol CatDetailViewModelProtocol {
     var cat: Breed { get set }
 }
 
-class CatDetailViewModel: CatDetailViewModelProtocol {
+final class CatDetailViewModel: CatDetailViewModelProtocol {
     var cat: Breed
     
     init(cat: Breed) {

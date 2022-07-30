@@ -7,8 +7,7 @@
 
 import UIKit
 
-class CatViewController: BaseViewController {
-    
+final class CatViewController: BaseViewController {
     private var viewModel: CatViewModelProtocol
     
     init(viewModel: CatViewModelProtocol) {

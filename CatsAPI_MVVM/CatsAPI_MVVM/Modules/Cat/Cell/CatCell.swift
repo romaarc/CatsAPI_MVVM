@@ -5,11 +5,9 @@
 //  Created by Roman Gorshkov on 24.12.2021.
 //
 
-import Foundation
-
 import UIKit
 
-class CatCell: BaseUICollectionViewCell {
+final class CatCell: BaseUICollectionViewCell {
     private let catImageView: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.translatesAutoresizingMaskIntoConstraints = false

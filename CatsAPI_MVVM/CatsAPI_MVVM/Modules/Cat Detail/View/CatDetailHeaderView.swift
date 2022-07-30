@@ -5,12 +5,9 @@
 //  Created by Roman Gorshkov on 25.12.2021.
 //
 
-import Foundation
-
 import UIKit
 
-class CatDetailHeaderView: BaseView {
-    
+final class CatDetailHeaderView: BaseView {
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false

@@ -16,7 +16,7 @@ protocol CatViewModelProtocol {
     func viewModelForSelectedRow(at indexPath: IndexPath) -> CatDetailViewModelProtocol
 }
 
-class CatViewModel {
+final class CatViewModel {
     private var cats: [Breed] = []
     private let catsNetworkService: NetworkServiceProtocol
     private var params = BreedsURLParameters(attach_breed: "",

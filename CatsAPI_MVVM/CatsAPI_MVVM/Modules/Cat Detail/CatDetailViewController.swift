@@ -7,8 +7,7 @@
 
 import UIKit
 
-class CatDetailViewController: UIViewController {
-    
+final class CatDetailViewController: UIViewController {
     private var viewModel: CatDetailViewModelProtocol
     private lazy var scrollView = UIScrollView()
     private lazy var contentView = UIView()

@@ -15,7 +15,6 @@ enum NetworkErrors: Error {
 }
 
 final class NetworkService {
-    
     private let reachability: ReachabilityProtocol
     
     init(reachability: ReachabilityProtocol) {
